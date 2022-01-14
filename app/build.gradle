@@ -32,12 +32,12 @@ android {
         development {
             buildConfigField "String", "ENV", "\"DEVELOPMENT\""
             buildConfigField "String", "BASE_URL", "\"https://newsapi.org/v2/\""
-            buildConfigField "String", "API_KEY", "\"87055553233f4db98aad6a760859d8b8\""
+            buildConfigField "String", "API_KEY", "\"apikey\""
         }
         production {
             buildConfigField "String", "ENV", "\"PRODUCTION\""
             buildConfigField "String", "BASE_URL", "\"https://newsapi.org/v2/\""
-            buildConfigField "String", "API_KEY", "\"87055553233f4db98aad6a760859d8b8\""
+            buildConfigField "String", "API_KEY", "\"apikey\""
         }
     }
     buildTypes {
