@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/iToolbarRegister"
+        layout="@layout/item_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/dimen_16dp">
+
+        <TextView
+            android:id="@+id/tvTitleRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="@string/register"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_20sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtLayoutUsername"
+            style="@style/DefaultInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_24dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtInputUsername"
+                style="@style/DefaultEditText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_56dp"
+                android:hint="@string/username"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtLayoutPassword"
+            style="@style/DefaultInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_24dp"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtInputPassword"
+                style="@style/DefaultEditText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_56dp"
+                android:hint="@string/password"
+                android:imeOptions="actionNext"
+                android:inputType="textPassword"
+                tools:text="Password" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <CheckBox
+            android:id="@+id/cbAgree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_16dp"
+            android:text="@string/i_agree_with_term_condition"
+            android:textColor="@color/color000000" />
+
+        <ViewFlipper
+            android:id="@+id/vfRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_24dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_regular"
+                android:insetTop="@dimen/dimen_0dp"
+                android:insetBottom="@dimen/dimen_0dp"
+                android:text="@string/register"
+                android:textColor="@android:color/white" />
+
+            <ProgressBar
+                android:id="@+id/pbRegister"
+                style="?android:attr/progressBarStyleSmallInverse"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                tools:visibility="visible" />
+
+        </ViewFlipper>
+
+    </LinearLayout>
+</LinearLayout>

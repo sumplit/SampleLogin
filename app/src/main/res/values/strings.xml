@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">TADA Test</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_profile">Profile</string>
+
+    <string name="dont_have_account">Don’t have account? Register</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+
+    <string name="warning_username_empty">Username should not be empty</string>
+    <string name="warning_password_empty">Password should not be empty</string>
+    <string name="warning_checkbox_should_be_check">Checkbox should be check</string>
+    <string name="user_is_registered">User is registered</string>
+    <string name="i_agree_with_term_condition">I Agree with Term and Condition</string>
+    <string name="format_welcome">Welcome, %s</string>
+    <string name="news_app">News Apps</string>
+    <string name="logout">Logout</string>
+    <string name="authentication_failed">Authentication failed</string>
+    <string name="detail">Detail</string>
+    <string name="yes">Yes</string>
+    <string name="success_register">Success register</string>
+
+</resources>

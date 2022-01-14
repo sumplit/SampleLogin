@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="id.test.tada.mvvm.main.listnews.ListNewsFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_list_news" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="id.test.tada.mvvm.main.profile.ProfileFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_list_news" />
+
+</navigation>
